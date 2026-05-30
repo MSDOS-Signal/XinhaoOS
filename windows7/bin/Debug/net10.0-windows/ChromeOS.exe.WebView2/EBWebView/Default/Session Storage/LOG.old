@@ -1,0 +1,8 @@
+2026/05/31-00:51:40.159 1f60 Reusing MANIFEST D:\C#app\windows7\windows7\bin\Debug\net10.0-windows\ChromeOS.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2026/05/31-00:51:40.161 1f60 Recovering log #4
+2026/05/31-00:51:40.164 1f60 Level-0 table #7: started
+2026/05/31-00:51:40.173 1f60 Level-0 table #7: 308527 bytes OK
+2026/05/31-00:51:40.175 1f60 Recovering log #7
+2026/05/31-00:51:40.179 1f60 Reusing old log D:\C#app\windows7\windows7\bin\Debug\net10.0-windows\ChromeOS.exe.WebView2\EBWebView\Default\Session Storage/000007.log 
+2026/05/31-00:51:40.181 1f60 Delete type=0 #4
+2026/05/31-00:51:40.181 1f60 Delete type=2 #8

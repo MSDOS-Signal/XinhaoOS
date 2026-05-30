@@ -1,0 +1,112 @@
+<Window x:Class="ChromeOS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChromeOS.Controls"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowState="Maximized"
+        ResizeMode="NoResize"
+        Title="XinhaoOS" Height="768" Width="1024">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/ChromeOSResources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid x:Name="MainGrid">
+        <!-- Boot Screen -->
+        <local:BootScreen x:Name="BootScreenControl" Visibility="Visible"/>
+
+        <!-- Shutdown Screen -->
+        <local:ShutdownScreen x:Name="ShutdownScreenControl" Visibility="Collapsed"/>
+
+        <!-- Shutdown Confirmation Dialog -->
+        <local:ShutdownConfirmationDialog x:Name="ShutdownConfirmationDialogControl" Visibility="Collapsed" Panel.ZIndex="2000"/>
+
+        <!-- Login Screen (hidden initially) -->
+        <local:LoginScreen x:Name="LoginScreenControl" Visibility="Collapsed"/>
+
+        <!-- Desktop (hidden initially) -->
+        <Grid x:Name="DesktopGrid" Visibility="Collapsed" MouseRightButtonDown="OnDesktopRightClick" MouseLeftButtonDown="OnDesktopClick" MouseWheel="OnDesktopMouseWheel">
+            <!-- Desktop context menu - macOS style -->
+            <Grid.ContextMenu>
+                <ContextMenu x:Name="DesktopContextMenu" Style="{StaticResource ChromeOSContextMenu}">
+                    <MenuItem x:Name="MenuItemNewFolder" Click="OnNewFolderClick" Icon="📁" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <MenuItem x:Name="MenuItemNewFile" Click="OnNewFileClick" Icon="📄" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <Separator Style="{StaticResource ChromeOSMenuSeparator}"/>
+                    <MenuItem x:Name="MenuItemCut" Click="OnCutClick" Icon="✂️" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <MenuItem x:Name="MenuItemCopy" Click="OnCopyClick" Icon="📋" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <MenuItem x:Name="MenuItemPaste" Click="OnPasteClick" Icon="📋" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <Separator Style="{StaticResource ChromeOSMenuSeparator}"/>
+                    <MenuItem x:Name="MenuItemChangeWallpaper" Click="OnChangeWallpaperClick" Icon="🖼️" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <MenuItem x:Name="MenuItemDisplaySettings" Click="OnDisplaySettingsClick" Icon="🖥️" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <MenuItem x:Name="MenuItemAppearance" Click="OnAppearanceClick" Style="{StaticResource ChromeOSMenuItem}">
+                        <MenuItem.Icon>🎨</MenuItem.Icon>
+                        <MenuItem x:Name="MenuItemLightMode" Click="OnLightModeClick" Style="{StaticResource ChromeOSMenuItem}"/>
+                        <MenuItem x:Name="MenuItemDarkMode" Click="OnDarkModeClick" IsCheckable="True" IsChecked="True" Style="{StaticResource ChromeOSMenuItem}"/>
+                        <Separator Style="{StaticResource ChromeOSMenuSeparator}"/>
+                        <MenuItem x:Name="MenuItemSmallIcons" Click="OnSmallIconsClick" Style="{StaticResource ChromeOSMenuItem}"/>
+                        <MenuItem x:Name="MenuItemMediumIcons" Click="OnMediumIconsClick" Style="{StaticResource ChromeOSMenuItem}"/>
+                        <MenuItem x:Name="MenuItemLargeIcons" Click="OnLargeIconsClick" Style="{StaticResource ChromeOSMenuItem}"/>
+                    </MenuItem>
+                    <MenuItem x:Name="MenuItemPersonalize" Click="OnPersonalizeClick" Icon="⚙️" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <Separator Style="{StaticResource ChromeOSMenuSeparator}"/>
+                    <MenuItem x:Name="MenuItemOpenTerminal" Click="OnOpenTerminalFromDesktopClick" Icon="💻" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <MenuItem x:Name="MenuItemSettings" Click="OnOpenSettingsFromDesktopClick" Icon="⚙️" Style="{StaticResource ChromeOSMenuItem}"/>
+                    <Separator Style="{StaticResource ChromeOSMenuSeparator}"/>
+                    <MenuItem x:Name="MenuItemSortBy" Click="OnSortByClick" Style="{StaticResource ChromeOSMenuItem}">
+                        <MenuItem.Icon>📊</MenuItem.Icon>
+                        <MenuItem x:Name="MenuItemName" IsCheckable="True" IsChecked="True" Style="{StaticResource ChromeOSMenuItem}"/>
+                        <MenuItem x:Name="MenuItemDateModified" IsCheckable="True" Style="{StaticResource ChromeOSMenuItem}"/>
+                        <MenuItem x:Name="MenuItemSize" IsCheckable="True" Style="{StaticResource ChromeOSMenuItem}"/>
+                        <MenuItem x:Name="MenuItemType" IsCheckable="True" Style="{StaticResource ChromeOSMenuItem}"/>
+                    </MenuItem>
+                    <MenuItem x:Name="MenuItemRefresh" Click="OnRefreshDesktopClick" Icon="🔄" Style="{StaticResource ChromeOSMenuItem}"/>
+                </ContextMenu>
+            </Grid.ContextMenu>
+            <!-- Wallpaper - macOS + Google Hybrid style -->
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#0F172A" Offset="0"/>
+                        <GradientStop Color="#1E293B" Offset="0.5"/>
+                        <GradientStop Color="#0F172A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+
+                <!-- Decorative circles - Google theme colors -->
+                <Canvas>
+                    <Ellipse Width="400" Height="400" Fill="#4285F4" Opacity="0.08" Canvas.Left="-100" Canvas.Top="-100"/>
+                    <Ellipse Width="350" Height="350" Fill="#EA4335" Opacity="0.06" Canvas.Right="-80" Canvas.Top="-50"/>
+                    <Ellipse Width="300" Height="300" Fill="#FBBC05" Opacity="0.05" Canvas.Left="100" Canvas.Bottom="-80"/>
+                    <Ellipse Width="250" Height="250" Fill="#34A853" Opacity="0.07" Canvas.Right="50" Canvas.Bottom="-30"/>
+                    <Ellipse Width="150" Height="150" Fill="#4285F4" Opacity="0.04" Canvas.Left="300" Canvas.Top="200"/>
+                </Canvas>
+            </Grid>
+
+            <!-- Desktop Icons Container -->
+            <Canvas x:Name="DesktopIconsCanvas" ClipToBounds="True" Margin="10" MouseRightButtonDown="OnDesktopRightClick" MouseLeftButtonDown="OnDesktopClick"/>
+
+            <!-- App windows container -->
+            <Canvas x:Name="AppContainer" ClipToBounds="True"/>
+
+            <!-- Launcher overlay -->
+            <local:LauncherControl x:Name="LauncherControl" Panel.ZIndex="1000"/>
+
+            <!-- Quick Settings Panels -->
+            <local:QuickSettingsPanel x:Name="QuickSettingsPanelControl" Panel.ZIndex="1001" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,70"/>
+            <local:NetworkPanel x:Name="NetworkPanelControl" Panel.ZIndex="1001" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,70"/>
+            <local:VolumePanel x:Name="VolumePanelControl" Panel.ZIndex="1001" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,70"/>
+            <local:BatteryPanel x:Name="BatteryPanelControl" Panel.ZIndex="1001" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,70"/>
+
+            <!-- Bottom Shelf -->
+            <DockPanel VerticalAlignment="Bottom">
+                <local:Shelf x:Name="ShelfControl" DockPanel.Dock="Bottom"/>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</Window>

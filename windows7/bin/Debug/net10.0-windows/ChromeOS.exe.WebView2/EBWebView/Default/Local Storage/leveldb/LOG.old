@@ -1,0 +1,6 @@
+2026/05/31-00:51:35.080 1f60 Reusing MANIFEST D:\C#app\windows7\windows7\bin\Debug\net10.0-windows\ChromeOS.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/31-00:51:35.091 1f60 Recovering log #3
+2026/05/31-00:51:35.095 1f60 Reusing old log D:\C#app\windows7\windows7\bin\Debug\net10.0-windows\ChromeOS.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 
+2026/05/31-00:52:26.724 1fe4 Level-0 table #5: started
+2026/05/31-00:52:26.731 1fe4 Level-0 table #5: 44076 bytes OK
+2026/05/31-00:52:26.733 1fe4 Delete type=0 #3

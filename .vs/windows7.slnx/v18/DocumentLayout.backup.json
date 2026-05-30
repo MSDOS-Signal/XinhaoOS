@@ -1,0 +1,604 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#app\\windows7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\resources\\chromeosresources.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\resources\\chromeosresources.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\shelf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\shelf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\shutdownscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\shutdownscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\systemcontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\systemcontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\systemtray.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\systemtray.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\quicksettingspanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\quicksettingspanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\shutdownconfirmationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\shutdownconfirmationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\notificationcenter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\notificationcenter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\networkpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\networkpanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\launchercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\launchercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\chromeoswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\chromeoswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\weatherapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\weatherapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\texteditorapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\texteditorapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\batterypanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\batterypanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\terminalapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\terminalapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\bootscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\bootscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\newsapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\newsapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\newsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\newsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\musicapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\musicapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\mapsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\mapsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\photosapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\photosapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\playstoreapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\playstoreapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\settingsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\settingsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\gmailapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\gmailapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\filesapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\filesapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\driveapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\driveapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\contactsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\contactsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\clockapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\clockapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\cameraapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\cameraapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\downloadsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\downloadsapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\browserapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\browserapp.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\browserapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\browserapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\calendarapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\calendarapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\apps\\calculatorapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\apps\\calculatorapp.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\controls\\volumepanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\controls\\volumepanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|d:\\c#app\\windows7\\windows7\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96617B52-E54F-7D87-A4B3-F7BD70ABF254}|windows7\\windows7.csproj|solutionrelative:windows7\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChromeOSResources.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Resources\\ChromeOSResources.xaml",
+              "RelativeDocumentMoniker": "windows7\\Resources\\ChromeOSResources.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Resources\\ChromeOSResources.xaml",
+              "RelativeToolTip": "windows7\\Resources\\ChromeOSResources.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:25:06.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shelf.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\Shelf.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\Shelf.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\Shelf.xaml",
+              "RelativeToolTip": "windows7\\Controls\\Shelf.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:24:06.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShutdownScreen.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\ShutdownScreen.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\ShutdownScreen.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\ShutdownScreen.xaml",
+              "RelativeToolTip": "windows7\\Controls\\ShutdownScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:13:58.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SystemControls.cs",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\SystemControls.cs",
+              "RelativeDocumentMoniker": "windows7\\Controls\\SystemControls.cs",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\SystemControls.cs",
+              "RelativeToolTip": "windows7\\Controls\\SystemControls.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T17:13:57.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SystemTray.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\SystemTray.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\SystemTray.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\SystemTray.xaml",
+              "RelativeToolTip": "windows7\\Controls\\SystemTray.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:02.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuickSettingsPanel.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\QuickSettingsPanel.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\QuickSettingsPanel.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\QuickSettingsPanel.xaml",
+              "RelativeToolTip": "windows7\\Controls\\QuickSettingsPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:24:03.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShutdownConfirmationDialog.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\ShutdownConfirmationDialog.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\ShutdownConfirmationDialog.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\ShutdownConfirmationDialog.xaml",
+              "RelativeToolTip": "windows7\\Controls\\ShutdownConfirmationDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:13:58.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotificationCenter.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\NotificationCenter.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\NotificationCenter.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\NotificationCenter.xaml",
+              "RelativeToolTip": "windows7\\Controls\\NotificationCenter.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:24:01.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NetworkPanel.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\NetworkPanel.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\NetworkPanel.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\NetworkPanel.xaml",
+              "RelativeToolTip": "windows7\\Controls\\NetworkPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:24:00.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LauncherControl.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\LauncherControl.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\LauncherControl.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\LauncherControl.xaml",
+              "RelativeToolTip": "windows7\\Controls\\LauncherControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:23:57.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChromeOSWindow.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\ChromeOSWindow.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\ChromeOSWindow.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\ChromeOSWindow.xaml",
+              "RelativeToolTip": "windows7\\Controls\\ChromeOSWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:23:55.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WeatherApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\WeatherApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\WeatherApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\WeatherApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\WeatherApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:23:50.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TextEditorApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\TextEditorApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\TextEditorApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\TextEditorApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\TextEditorApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:23:49.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BatteryPanel.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\BatteryPanel.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\BatteryPanel.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\BatteryPanel.xaml",
+              "RelativeToolTip": "windows7\\Controls\\BatteryPanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:13.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginScreen.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\LoginScreen.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\LoginScreen.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\LoginScreen.xaml",
+              "RelativeToolTip": "windows7\\Controls\\LoginScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:13:55.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TerminalApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\TerminalApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\TerminalApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\TerminalApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\TerminalApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:23:47.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BootScreen.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\BootScreen.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\BootScreen.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\BootScreen.xaml",
+              "RelativeToolTip": "windows7\\Controls\\BootScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:12.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NewsApp.xaml.cs",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\NewsApp.xaml.cs",
+              "RelativeDocumentMoniker": "windows7\\Apps\\NewsApp.xaml.cs",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\NewsApp.xaml.cs",
+              "RelativeToolTip": "windows7\\Apps\\NewsApp.xaml.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAIA6wO0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T17:22:10.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NewsApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\NewsApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\NewsApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\NewsApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\NewsApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:26.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MusicApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\MusicApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\MusicApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\MusicApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\MusicApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:25.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MapsApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\MapsApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\MapsApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\MapsApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\MapsApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:20:54.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PhotosApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\PhotosApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\PhotosApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\PhotosApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\PhotosApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:28.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PlayStoreApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\PlayStoreApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\PlayStoreApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\PlayStoreApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\PlayStoreApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:29.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SettingsApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\SettingsApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\SettingsApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\SettingsApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\SettingsApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:13:48.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GmailApp.xaml.cs",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\GmailApp.xaml.cs",
+              "RelativeDocumentMoniker": "windows7\\Apps\\GmailApp.xaml.cs",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\GmailApp.xaml.cs",
+              "RelativeToolTip": "windows7\\Apps\\GmailApp.xaml.cs",
+              "ViewState": "AgIAAJoBAAAAAAAAAAAnwKsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T17:20:53.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FilesApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\FilesApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\FilesApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\FilesApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\FilesApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:19:25.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DriveApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\DriveApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\DriveApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\DriveApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\DriveApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:19:21.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ContactsApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\ContactsApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\ContactsApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\ContactsApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\ContactsApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:18:45.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ClockApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\ClockApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\ClockApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\ClockApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\ClockApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:18:44.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CameraApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\CameraApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\CameraApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\CameraApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\CameraApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:16.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DownloadsApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\DownloadsApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\DownloadsApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\DownloadsApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\DownloadsApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:13:51.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BrowserApp.xaml.cs",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\BrowserApp.xaml.cs",
+              "RelativeDocumentMoniker": "windows7\\Apps\\BrowserApp.xaml.cs",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\BrowserApp.xaml.cs",
+              "RelativeToolTip": "windows7\\Apps\\BrowserApp.xaml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAtwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T17:16:59.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BrowserApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\BrowserApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\BrowserApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\BrowserApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\BrowserApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:22.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CalendarApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\CalendarApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\CalendarApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\CalendarApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\CalendarApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:13:43.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CalculatorApp.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Apps\\CalculatorApp.xaml",
+              "RelativeDocumentMoniker": "windows7\\Apps\\CalculatorApp.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Apps\\CalculatorApp.xaml",
+              "RelativeToolTip": "windows7\\Apps\\CalculatorApp.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:24.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "VolumePanel.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\Controls\\VolumePanel.xaml",
+              "RelativeDocumentMoniker": "windows7\\Controls\\VolumePanel.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\Controls\\VolumePanel.xaml",
+              "RelativeToolTip": "windows7\\Controls\\VolumePanel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T17:14:01.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "windows7\\MainWindow.xaml",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\MainWindow.xaml",
+              "RelativeToolTip": "windows7\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T10:38:19.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\C#app\\windows7\\windows7\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "windows7\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\C#app\\windows7\\windows7\\MainWindow.xaml.cs",
+              "RelativeToolTip": "windows7\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T10:38:15.945Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

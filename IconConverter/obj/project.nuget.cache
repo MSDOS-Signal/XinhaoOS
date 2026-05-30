@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "8a7rqI/86VI=",
+  "success": true,
+  "projectFilePath": "D:\\C#app\\windows7\\IconConverter\\IconConverter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Victor.Dong\\.nuget\\packages\\system.drawing.common\\10.0.0\\system.drawing.common.10.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Drawing.Common 将不会删除。请考虑从依赖项中移除此包，因为可能不需要它。",
+      "projectPath": "D:\\C#app\\windows7\\IconConverter\\IconConverter.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\C#app\\windows7\\IconConverter\\IconConverter.csproj",
+      "libraryId": "System.Drawing.Common",
+      "targetGraphs": [
+        "net10.0-windows7.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+<UserControl x:Class="ChromeOS.Controls.ChromeOSWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Loaded="OnLoaded">
+    <Grid>
+        <Border x:Name="WindowBorder" 
+                Background="{StaticResource ChromeOSWindowBackground}"
+                CornerRadius="12"
+                BorderBrush="#48484A"
+                BorderThickness="1">
+            <Border.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="25" ShadowDepth="0" Opacity="0.6"/>
+            </Border.Effect>
+            <DockPanel>
+                <!-- Title bar - macOS style -->
+                <Border DockPanel.Dock="Top" 
+                        Background="#2C2C2E" 
+                        Height="44"
+                        MouseLeftButtonDown="OnTitleBarMouseDown"
+                        MouseLeftButtonUp="OnTitleBarMouseUp"
+                        MouseMove="OnTitleBarMouseMove"
+                        CornerRadius="12,12,0,0">
+                    <DockPanel Margin="16,0,16,0">
+                        <!-- Window buttons - macOS traffic lights (left side) -->
+                        <StackPanel Orientation="Horizontal" 
+                                    DockPanel.Dock="Left"
+                                    HorizontalAlignment="Left" 
+                                    VerticalAlignment="Center">
+                            <Button x:Name="CloseButton"
+                                    Width="14" Height="14"
+                                    Background="#FF5F5F"
+                                    BorderThickness="0"
+                                    Margin="0,0,9,0"
+                                    Click="OnCloseClick"
+                                    Cursor="Hand">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="buttonBorder"
+                                                Background="{TemplateBinding Background}" 
+                                                CornerRadius="7"
+                                                BorderBrush="#E04444"
+                                                BorderThickness="0.5"
+                                                Padding="0">
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="buttonBorder" Property="Background" Value="#FF7A7A"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter TargetName="buttonBorder" Property="Background" Value="#CC4444"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <Button x:Name="MinimizeButton"
+                                    Width="14" Height="14"
+                                    Background="#FFD93D"
+                                    BorderThickness="0"
+                                    Margin="0,0,9,0"
+                                    Click="OnMinimizeClick"
+                                    Cursor="Hand">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="buttonBorder"
+                                                Background="{TemplateBinding Background}" 
+                                                CornerRadius="7"
+                                                BorderBrush="#E5BE2E"
+                                                BorderThickness="0.5"
+                                                Padding="0">
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="buttonBorder" Property="Background" Value="#FFE566"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter TargetName="buttonBorder" Property="Background" Value="#CCAF27"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <Button x:Name="MaximizeButton"
+                                    Width="14" Height="14"
+                                    Background="#6BCB77"
+                                    BorderThickness="0"
+                                    Click="OnMaximizeClick"
+                                    Cursor="Hand">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="buttonBorder"
+                                                Background="{TemplateBinding Background}" 
+                                                CornerRadius="7"
+                                                BorderBrush="#56BE66"
+                                                BorderThickness="0.5"
+                                                Padding="0">
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="buttonBorder" Property="Background" Value="#85D88F"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter TargetName="buttonBorder" Property="Background" Value="#4FA65B"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+                        <!-- Title - centered -->
+                        <TextBlock x:Name="TitleText" 
+                                   Text="Window" 
+                                   Foreground="#FFFFFF" 
+                                   FontSize="13" 
+                                   FontWeight="Medium"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"/>
+                    </DockPanel>
+                </Border>
+
+                <!-- Content area -->
+                <ContentPresenter x:Name="WindowContent" Margin="0"/>
+            </DockPanel>
+        </Border>
+
+        <!-- Resize borders (overlay) -->
+        <Rectangle x:Name="ResizeLeft" Width="5" Fill="Transparent" 
+                   Cursor="SizeWE" MouseLeftButtonDown="OnResizeLeft"
+                   HorizontalAlignment="Left" VerticalAlignment="Stretch" Panel.ZIndex="1"/>
+        <Rectangle x:Name="ResizeRight" Width="5" Fill="Transparent" 
+                   Cursor="SizeWE" MouseLeftButtonDown="OnResizeRight"
+                   HorizontalAlignment="Right" VerticalAlignment="Stretch" Panel.ZIndex="1"/>
+        <Rectangle x:Name="ResizeTop" Height="5" Fill="Transparent" 
+                   Cursor="SizeNS" MouseLeftButtonDown="OnResizeTop"
+                   HorizontalAlignment="Stretch" VerticalAlignment="Top" Panel.ZIndex="1"/>
+        <Rectangle x:Name="ResizeBottom" Height="5" Fill="Transparent" 
+                   Cursor="SizeNS" MouseLeftButtonDown="OnResizeBottom"
+                   HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Panel.ZIndex="1"/>
+        <Rectangle x:Name="ResizeTopLeft" Width="10" Height="10" Fill="Transparent" 
+                   Cursor="SizeNWSE" MouseLeftButtonDown="OnResizeTopLeft"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="1"/>
+        <Rectangle x:Name="ResizeTopRight" Width="10" Height="10" Fill="Transparent" 
+                   Cursor="SizeNESW" MouseLeftButtonDown="OnResizeTopRight"
+                   HorizontalAlignment="Right" VerticalAlignment="Top" Panel.ZIndex="1"/>
+        <Rectangle x:Name="ResizeBottomLeft" Width="10" Height="10" Fill="Transparent" 
+                   Cursor="SizeNESW" MouseLeftButtonDown="OnResizeBottomLeft"
+                   HorizontalAlignment="Left" VerticalAlignment="Bottom" Panel.ZIndex="1"/>
+        <Rectangle x:Name="ResizeBottomRight" Width="10" Height="10" Fill="Transparent" 
+                   Cursor="SizeNWSE" MouseLeftButtonDown="OnResizeBottomRight"
+                   HorizontalAlignment="Right" VerticalAlignment="Bottom" Panel.ZIndex="1"/>
+    </Grid>
+</UserControl>

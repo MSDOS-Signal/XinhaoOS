@@ -1,0 +1,66 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <!-- Desktop -->
+    <system:String x:Key="NewFolder">New Folder</system:String>
+    <system:String x:Key="NewFile">New File</system:String>
+    <system:String x:Key="Cut">Cut</system:String>
+    <system:String x:Key="Copy">Copy</system:String>
+    <system:String x:Key="Paste">Paste</system:String>
+    <system:String x:Key="ChangeWallpaper">Change Wallpaper</system:String>
+    <system:String x:Key="DisplaySettings">Display Settings</system:String>
+    <system:String x:Key="Appearance">Appearance</system:String>
+    <system:String x:Key="LightMode">Light Mode</system:String>
+    <system:String x:Key="DarkMode">Dark Mode</system:String>
+    <system:String x:Key="SmallIcons">Small Icons</system:String>
+    <system:String x:Key="MediumIcons">Medium Icons</system:String>
+    <system:String x:Key="LargeIcons">Large Icons</system:String>
+    <system:String x:Key="Personalize">Personalize</system:String>
+    <system:String x:Key="OpenInTerminal">Open in Terminal</system:String>
+    <system:String x:Key="Settings">Settings</system:String>
+    <system:String x:Key="SortBy">Sort By</system:String>
+    <system:String x:Key="Name">Name</system:String>
+    <system:String x:Key="DateModified">Date Modified</system:String>
+    <system:String x:Key="Size">Size</system:String>
+    <system:String x:Key="Type">Type</system:String>
+    <system:String x:Key="Refresh">Refresh</system:String>
+    
+    <!-- Settings -->
+    <system:String x:Key="System">System</system:String>
+    <system:String x:Key="Network">Network</system:String>
+    <system:String x:Key="Bluetooth">Bluetooth</system:String>
+    <system:String x:Key="Sound">Sound</system:String>
+    <system:String x:Key="Battery">Battery</system:String>
+    <system:String x:Key="Display">Display</system:String>
+    <system:String x:Key="Language">Language</system:String>
+    <system:String x:Key="English">English</system:String>
+    <system:String x:Key="Chinese">Chinese</system:String>
+    
+    <!-- Apps -->
+    <system:String x:Key="Chrome">Chrome</system:String>
+    <system:String x:Key="Files">Files</system:String>
+    <system:String x:Key="Terminal">Terminal</system:String>
+    <system:String x:Key="Calculator">Calculator</system:String>
+    
+    <!-- Network Panel -->
+    <system:String x:Key="AvailableNetworks">Available Networks</system:String>
+    <system:String x:Key="OtherNetworks">Other Networks</system:String>
+    <system:String x:Key="Connected">Connected</system:String>
+    <system:String x:Key="NetworkSettings">Network Settings</system:String>
+    
+    <!-- Volume Panel -->
+    <system:String x:Key="Volume">Volume</system:String>
+    <system:String x:Key="SoundSettings">Sound Settings</system:String>
+    
+    <!-- Battery Panel -->
+    <system:String x:Key="TimeRemaining">Time remaining</system:String>
+    <system:String x:Key="PowerSource">Power source</system:String>
+    <system:String x:Key="BatteryCharging">Battery Charging</system:String>
+    <system:String x:Key="BatteryDischarging">Battery Discharging</system:String>
+    <system:String x:Key="ACAdapter">AC Adapter</system:String>
+    <system:String x:Key="BatterySettings">Battery Settings</system:String>
+    
+    <!-- Login -->
+    <system:String x:Key="EnterPassword">Enter your password</system:String>
+    <system:String x:Key="Login">Login</system:String>
+</ResourceDictionary>

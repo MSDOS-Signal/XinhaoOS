@@ -1,0 +1,20 @@
+<UserControl x:Class="ChromeOS.Apps.MapsApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="#292A2D">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="🗺" FontSize="64" HorizontalAlignment="Center" Margin="0,0,0,16"/>
+            <TextBlock Text="地图" FontSize="28" FontWeight="SemiBold" Foreground="#E8EAED"
+                       HorizontalAlignment="Center" Margin="0,0,0,8"/>
+            <TextBlock Text="即将上线" FontSize="14" Foreground="#9AA0A6"
+                       HorizontalAlignment="Center" Margin="0,0,0,24"/>
+            <TextBlock Text="在这里你将能够：" FontSize="14" Foreground="#E8EAED" Margin="0,0,0,12"/>
+            <StackPanel Margin="20,0">
+                <TextBlock Text="📍 查看地图和卫星图像" FontSize="13" Foreground="#9AA0A6" Margin="0,4"/>
+                <TextBlock Text="🧭 获取导航和路线规划" FontSize="13" Foreground="#9AA0A6" Margin="0,4"/>
+                <TextBlock Text="🏢 探索周边商家和地点" FontSize="13" Foreground="#9AA0A6" Margin="0,4"/>
+                <TextBlock Text="🚦 查看实时路况" FontSize="13" Foreground="#9AA0A6" Margin="0,4"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

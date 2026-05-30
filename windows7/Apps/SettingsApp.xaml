@@ -1,0 +1,93 @@
+<UserControl x:Class="ChromeOS.Apps.SettingsApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             MouseWheel="OnMouseWheel">
+    <DockPanel Background="#292A2D">
+        <Border DockPanel.Dock="Top" Background="#35363A" Height="60">
+            <StackPanel Orientation="Horizontal" Margin="20,0">
+                <TextBlock Text="Settings" Foreground="#E8EAED" FontSize="24" FontWeight="Light" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <DockPanel>
+            <Border DockPanel.Dock="Left" Background="#35363A" Width="220">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:Name="SettingsNav" Margin="8">
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnNetworkClick" Tag="network">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="📶" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Network" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnBluetoothClick" Tag="bluetooth">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🔵" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Bluetooth" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnDisplayClick" Tag="display">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🖥️" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Display" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnSoundClick" Tag="sound">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🔊" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Sound" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnBatteryClick" Tag="battery">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🔋" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Battery" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnAccountsClick" Tag="accounts">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="👤" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Accounts" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnAccessibilityClick" Tag="accessibility">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="♿" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Accessibility" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnPrivacyClick" Tag="privacy">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🔒" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Privacy" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnLanguageClick" Tag="language">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🌐" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Language" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnAdvancedClick" Tag="advanced">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="⚙️" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="Advanced" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Style="{StaticResource ChromeOSButton}" Padding="12,10" Margin="0,2" HorizontalContentAlignment="Left" Click="OnAboutClick" Tag="about">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="ℹ️" FontSize="16" Margin="0,0,10,0"/>
+                                <TextBlock Text="About" Foreground="#E8EAED"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+
+            <ScrollViewer x:Name="SettingsContent" VerticalScrollBarVisibility="Auto" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="Select a category from the sidebar" Foreground="#9AA0A6" FontSize="14" HorizontalAlignment="Center" Margin="0,50"/>
+                </StackPanel>
+            </ScrollViewer>
+        </DockPanel>
+    </DockPanel>
+</UserControl>

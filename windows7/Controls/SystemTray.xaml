@@ -1,0 +1,54 @@
+<UserControl x:Class="ChromeOS.Controls.SystemTray"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ChromeOS.Controls">
+    <StackPanel Orientation="Horizontal">
+        <!-- Quick Settings Icon -->
+        <Button x:Name="QuickSettingsButton" Style="{StaticResource IconButtonStyle}" ToolTip="Quick Settings" Click="OnQuickSettingsClick">
+            <Path Data="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.08-.49 0-.61.22l-2 3.46c-.12.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66z" 
+                  Fill="#E8EAED" Width="18" Height="18" Stretch="Uniform"/>
+        </Button>
+
+        <!-- WiFi Icon -->
+        <Button x:Name="WifiButton" Style="{StaticResource IconButtonStyle}" ToolTip="WiFi Connected" Click="OnWifiClick">
+            <Path Data="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 0 0-6 0zm-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" 
+                  Fill="#E8EAED" Width="18" Height="18" Stretch="Uniform"/>
+        </Button>
+
+        <!-- Volume Icon -->
+        <Button x:Name="VolumeButton" Style="{StaticResource IconButtonStyle}" ToolTip="Volume" Click="OnVolumeClick">
+            <Path x:Name="VolumeIconPath" Data="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.5v7a4.47 4.47 0 0 0 2.5-3.5zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" 
+                  Fill="#E8EAED" Width="18" Height="18" Stretch="Uniform"/>
+        </Button>
+
+        <!-- Battery Icon -->
+        <Button x:Name="BatteryButton" Style="{StaticResource IconButtonStyle}" ToolTip="Battery: 85%" Click="OnBatteryClick">
+            <Grid Width="18" Height="18">
+                <Path Data="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v13.34C7 19.4 7.6 20 8.33 20h7.34c.73 0 1.33-.6 1.33-1.33V5.33C17 4.6 16.4 4 15.67 4z" 
+                      Fill="#E8EAED" Width="12" Stretch="Uniform" HorizontalAlignment="Left" Margin="0"/>
+                <Rectangle x:Name="BatteryFill" Fill="#8AB4F8" Width="8" RadiusX="1" RadiusY="1" 
+                           HorizontalAlignment="Left" Margin="1,3,0,1"/>
+            </Grid>
+        </Button>
+
+        <!-- Clock -->
+        <Button x:Name="ClockButton" Style="{StaticResource IconButtonStyle}" 
+                Width="auto" Padding="10,0" 
+                ToolTip="Click for calendar"
+                Click="OnClockClick">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="TimeText" 
+                           Text="12:00" 
+                           Foreground="#E8EAED" 
+                           FontSize="12" 
+                           VerticalAlignment="Center"/>
+                <TextBlock x:Name="DateText" 
+                           Text="5/30" 
+                           Foreground="#E8EAED" 
+                           FontSize="12" 
+                           Margin="6,0,0,0"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+</UserControl>

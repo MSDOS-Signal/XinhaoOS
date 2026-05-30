@@ -1,0 +1,71 @@
+<UserControl x:Class="ChromeOS.Apps.GmailApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="#292A2D">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#35363A" BorderBrush="#5F6368" BorderThickness="0,0,0,1" Margin="0,0,0,287" Grid.RowSpan="2">
+            <Grid Margin="16,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Margin="-6,0,6,0">
+                    <TextBlock Text="✉" FontSize="24" VerticalAlignment="Center" Margin="0,0,12,0"/>
+                    <TextBlock Text="Gmail" FontSize="20" FontWeight="SemiBold" Foreground="#E8EAED" VerticalAlignment="Center" RenderTransformOrigin="0.151,0.349"/>
+                </StackPanel>
+                <TextBox Grid.Column="1" Width="269" HorizontalAlignment="Left"
+                         Style="{StaticResource ChromeOSTextBox}"
+                         Text="搜索邮件" Foreground="#9AA0A6" FontSize="14"
+                         GotFocus="OnSearchGotFocus" LostFocus="OnSearchLostFocus" Margin="12,0,0,10" TextChanged="TextBox_TextChanged"/>
+                <Button Grid.Column="1" Content="✏ 撰写" Style="{StaticResource ChromeOSButton}"
+                        Background="#8AB4F8" Foreground="#202124" FontWeight="SemiBold"
+                        Padding="20,10" Click="OnComposeClick" Grid.ColumnSpan="2" Margin="300,0,0,10"/>
+            </Grid>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Sidebar -->
+            <Border Grid.Column="0" Background="#292A2D" BorderBrush="#5F6368" BorderThickness="0,0,1,0">
+                <StackPanel Margin="8,12">
+                    <Button Content="📥 收件箱 (12)" Style="{StaticResource ChromeOSButton}"
+                            Background="#3C4043" HorizontalAlignment="Stretch" Padding="12,10"
+                            Click="OnFolderClick" Tag="inbox"/>
+                    <Button Content="⭐ 已加星标" Style="{StaticResource ChromeOSButton}"
+                            HorizontalAlignment="Stretch" Padding="12,10" Margin="0,4"
+                            Click="OnFolderClick" Tag="starred"/>
+                    <Button Content="📤 已发送" Style="{StaticResource ChromeOSButton}"
+                            HorizontalAlignment="Stretch" Padding="12,10" Margin="0,4"
+                            Click="OnFolderClick" Tag="sent"/>
+                    <Button Content="📝 草稿 (3)" Style="{StaticResource ChromeOSButton}"
+                            HorizontalAlignment="Stretch" Padding="12,10" Margin="0,4"
+                            Click="OnFolderClick" Tag="drafts"/>
+                    <Button Content="⚠ 垃圾邮件" Style="{StaticResource ChromeOSButton}"
+                            HorizontalAlignment="Stretch" Padding="12,10" Margin="0,4"
+                            Click="OnFolderClick" Tag="spam"/>
+                    <Button Content="🗑 回收站" Style="{StaticResource ChromeOSButton}"
+                            HorizontalAlignment="Stretch" Padding="12,10" Margin="0,4"
+                            Click="OnFolderClick" Tag="trash"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Email List -->
+            <Border Grid.Column="1" Background="#292A2D">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:Name="EmailList" Margin="0,8"/>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

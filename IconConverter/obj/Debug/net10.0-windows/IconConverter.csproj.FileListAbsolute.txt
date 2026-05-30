@@ -1,0 +1,14 @@
+D:\C#app\windows7\IconConverter\bin\Debug\net10.0-windows\IconConverter.exe
+D:\C#app\windows7\IconConverter\bin\Debug\net10.0-windows\IconConverter.deps.json
+D:\C#app\windows7\IconConverter\bin\Debug\net10.0-windows\IconConverter.runtimeconfig.json
+D:\C#app\windows7\IconConverter\bin\Debug\net10.0-windows\IconConverter.dll
+D:\C#app\windows7\IconConverter\bin\Debug\net10.0-windows\IconConverter.pdb
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\IconConverter.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\IconConverter.AssemblyInfoInputs.cache
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\IconConverter.AssemblyInfo.cs
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\IconConverter.csproj.CoreCompileInputs.cache
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\IconConverter.dll
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\refint\IconConverter.dll
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\IconConverter.pdb
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\IconConverter.genruntimeconfig.cache
+D:\C#app\windows7\IconConverter\obj\Debug\net10.0-windows\ref\IconConverter.dll

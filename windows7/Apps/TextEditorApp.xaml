@@ -1,0 +1,67 @@
+<UserControl x:Class="ChromeOS.Apps.TextEditorApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             KeyDown="OnKeyDown">
+    <DockPanel Background="#292A2D">
+        <!-- Menu bar -->
+        <Border DockPanel.Dock="Top" Background="#35363A" Height="36">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Style="{StaticResource ChromeOSButton}" Padding="12,6" Margin="6,0" FontSize="12" Click="OnNewClick" ToolTip="New (Ctrl+N)">
+                    <TextBlock Text="New" Foreground="#E8EAED"/>
+                </Button>
+                <Button Style="{StaticResource ChromeOSButton}" Padding="12,6" Margin="4,0" FontSize="12" Click="OnOpenClick" ToolTip="Open (Ctrl+O)">
+                    <TextBlock Text="Open" Foreground="#E8EAED"/>
+                </Button>
+                <Button Style="{StaticResource ChromeOSButton}" Padding="12,6" Margin="4,0" FontSize="12" Click="OnSaveClick" ToolTip="Save (Ctrl+S)">
+                    <TextBlock Text="Save" Foreground="#E8EAED"/>
+                </Button>
+                <Button Style="{StaticResource ChromeOSButton}" Padding="12,6" Margin="4,0" FontSize="12" Click="OnSaveAsClick" ToolTip="Save As">
+                    <TextBlock Text="Save As" Foreground="#E8EAED"/>
+                </Button>
+                <Separator Background="#5F6368" Margin="8,4" Width="1"/>
+                <Button Style="{StaticResource ChromeOSButton}" Padding="12,6" Margin="4,0" FontSize="12" Click="OnUndoClick" ToolTip="Undo (Ctrl+Z)">
+                    <TextBlock Text="Undo" Foreground="#E8EAED"/>
+                </Button>
+                <Button Style="{StaticResource ChromeOSButton}" Padding="12,6" Margin="4,0" FontSize="12" Click="OnRedoClick" ToolTip="Redo (Ctrl+Y)">
+                    <TextBlock Text="Redo" Foreground="#E8EAED"/>
+                </Button>
+                <Separator Background="#5F6368" Margin="8,4" Width="1"/>
+                <Button Style="{StaticResource ChromeOSButton}" Padding="12,6" Margin="4,0" FontSize="12" Click="OnWordWrapClick">
+                    <TextBlock x:Name="WordWrapText" Text="Word Wrap: Off" Foreground="#9AA0A6"/>
+                </Button>
+            </StackPanel>
+        </Border>
+
+        <!-- Status bar -->
+        <Border DockPanel.Dock="Bottom" Background="#35363A" Height="28">
+            <Grid Margin="12,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="FilePathText" Text="Untitled" Foreground="#9AA0A6" FontSize="11" VerticalAlignment="Center"/>
+                <TextBlock x:Name="LineColText" Grid.Column="1" Text="Ln 1, Col 1" Foreground="#9AA0A6" FontSize="11" VerticalAlignment="Center" Margin="16,0"/>
+                <TextBlock x:Name="WordCountText" Grid.Column="2" Text="0 words" Foreground="#9AA0A6" FontSize="11" VerticalAlignment="Center" Margin="16,0"/>
+                <TextBlock x:Name="CharCountText" Grid.Column="3" Text="0 chars" Foreground="#9AA0A6" FontSize="11" VerticalAlignment="Center" Margin="16,0"/>
+            </Grid>
+        </Border>
+
+        <!-- Text area -->
+        <TextBox x:Name="Editor"
+                 Background="#1E1E1E"
+                 Foreground="#E8EAED"
+                 FontFamily="Consolas, Courier New"
+                 FontSize="14"
+                 Padding="12"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 BorderThickness="0"
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 TextChanged="OnEditorTextChanged"
+                 SelectionChanged="OnEditorSelectionChanged"
+                 Text=""/>
+    </DockPanel>
+</UserControl>

@@ -1,0 +1,48 @@
+<UserControl x:Class="ChromeOS.Apps.TerminalApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="#1E1E1E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer x:Name="OutputScroll" VerticalScrollBarVisibility="Auto" Padding="12">
+            <TextBlock x:Name="TerminalOutput"
+                       Foreground="#00FF00"
+                       FontFamily="Consolas, Courier New"
+                       FontSize="14"
+                       TextWrapping="Wrap">
+                <Run Foreground="#0A84FF">XinhaoOS Terminal v1.0</Run>
+                <LineBreak/>
+                <Run Foreground="#9AA0A6">Type 'help' for available commands</Run>
+                <LineBreak/>
+                <LineBreak/>
+            </TextBlock>
+        </ScrollViewer>
+        <Grid Grid.Row="1" Background="#2D2D2D">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="PromptText"
+                       Text="$ "
+                       Foreground="#8AB4F8"
+                       FontFamily="Consolas, Courier New"
+                       FontSize="14"
+                       Padding="12,8"
+                       VerticalAlignment="Center"/>
+            <TextBox x:Name="TerminalInput"
+                     Grid.Column="1"
+                     Background="Transparent"
+                     Foreground="#00FF00"
+                     FontFamily="Consolas, Courier New"
+                     FontSize="14"
+                     BorderThickness="0"
+                     CaretBrush="#00FF00"
+                     Padding="0,8"
+                     VerticalContentAlignment="Center"
+                     KeyDown="OnTerminalInputKeyDown"
+                     TextChanged="OnTerminalInputTextChanged"/>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,59 @@
+0:00:16 Microsoft.Shutdown.TabStripModel.RunUnloadListenerBeforeClosing_false
+0:00:16 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosedAll
+0:00:16 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+0:00:16 Widget Closed: StatusBubble
+0:00:16 Browser2 Close Tab2 at 0
+0:00:16 Microsoft.UnloadController.ClearUnloadState
+0:00:16 Tab2 WebContentsDestroyed
+0:00:16 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:00:16 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:00:16 Microsoft.Shutdown.OnWindowClosing
+0:00:16 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:00:16 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:00:16 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+0:00:16 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+0:00:16 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+0:00:16 Widget Closed: BrowserWidget
+0:00:16 Microsoft.UnloadController.TabStripEmpty
+0:00:16 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+0:00:16 Microsoft.Shutdown.OnWindowClosing
+0:00:16 Microsoft.Shutdown.OnWindowClosing_DeleteScheduled
+0:00:16 Microsoft.Browser_Removed
+0:00:19 Media.Hidden
+0:00:20 Memory Pressure: Critical
+0:00:28 Microsoft.NewBrowser_Popup
+0:00:28 Microsoft.BrowserList.AddBrowser
+0:00:28 Browser3 Insert active Tab3 at 0
+0:00:28 Tab3 StartNav16 #auto_toplevel
+0:00:28 Tab3 StartNav17 #google #typed
+0:00:28 Tab3 FinishNav16
+0:00:28 Tab3 PageLoad
+0:00:29 Tab3 FinishNav17 ERR_ABORTED
+0:00:29 Tab3 StartNav18 #bing #typed
+0:00:29 Widget Closed: StatusBubble
+0:00:29 Tab3 FinishNav18
+0:00:29 Tab3 PageLoad #bing
+0:00:29 Tab3 StartNav19 #bing #renderer-script #auto_subframe
+0:00:30 Tab3 FinishNav19
+0:00:30 Tab3 PageLoad
+0:00:30 Tab3 StartNav20 #bing #renderer-script #auto_subframe
+0:00:31 Tab3 FinishNav20
+0:00:31 Tab3 PageLoad #bing
+0:00:31 Memory Pressure: Critical
+0:00:40 Memory Pressure: Critical
+0:00:49 Widget Closed: StatusBubble
+0:00:52 Microsoft.NewBrowser_Popup
+0:00:52 Microsoft.BrowserList.AddBrowser
+0:00:52 Browser4 Insert active Tab4 at 0
+0:00:52 Tab4 StartNav21 #auto_toplevel
+0:00:52 Tab4 StartNav22 #google #typed
+0:00:52 Tab4 FinishNav21
+0:00:52 Tab4 PageLoad
+0:00:52 Tab4 FinishNav22 ERR_ABORTED
+0:00:52 Tab4 StartNav23 #typed
+0:00:54 Memory Pressure: Critical
+0:01:05 Memory Pressure: Critical
+0:01:10 Memory Pressure: Critical
+0:01:13 Tab4 FinishNav23 ERR_CONNECTION_TIMED_OUT
+0:01:14 Tab4 PageLoad
+0:03:11 Microsoft.Shutdown.OnWindowClosing

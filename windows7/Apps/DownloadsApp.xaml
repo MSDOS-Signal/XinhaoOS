@@ -1,0 +1,89 @@
+<UserControl x:Class="ChromeOS.Apps.DownloadsApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel Background="#292A2D">
+        <!-- Header -->
+        <Border DockPanel.Dock="Top" Background="#35363A" Height="50">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="Downloads" Foreground="#E8EAED" FontSize="18" Margin="16,0"/>
+                <Button Style="{StaticResource ChromeOSButton}" Padding="10,4" Margin="8,0" FontSize="12" Click="OnClearClick">
+                    <TextBlock Text="Clear all" Foreground="#E8EAED"/>
+                </Button>
+                <Button Style="{StaticResource ChromeOSButton}" Padding="10,4" Margin="4,0" FontSize="12">
+                    <TextBlock Text="Open folder" Foreground="#E8EAED"/>
+                </Button>
+            </StackPanel>
+        </Border>
+
+        <!-- Download list -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="DownloadList" Margin="16">
+                <!-- Sample downloads -->
+                <Border Background="#35363A" CornerRadius="8" Padding="12" Margin="0,0,0,8">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="📄" FontSize="24" Margin="0,0,12,0"/>
+                            <StackPanel>
+                                <TextBlock Text="document.pdf" Foreground="#E8EAED" FontSize="14"/>
+                                <TextBlock Text="Completed - 2.4 MB" Foreground="#81C995" FontSize="12"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <ProgressBar Value="100" Height="4" Margin="0,8,0,0" Foreground="#81C995"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#35363A" CornerRadius="8" Padding="12" Margin="0,0,0,8">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🎵" FontSize="24" Margin="0,0,12,0"/>
+                            <StackPanel>
+                                <TextBlock Text="music.mp3" Foreground="#E8EAED" FontSize="14"/>
+                                <TextBlock Text="Completed - 5.8 MB" Foreground="#81C995" FontSize="12"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <ProgressBar Value="100" Height="4" Margin="0,8,0,0" Foreground="#81C995"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#35363A" CornerRadius="8" Padding="12" Margin="0,0,0,8">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="📦" FontSize="24" Margin="0,0,12,0"/>
+                            <StackPanel>
+                                <TextBlock Text="archive.zip" Foreground="#E8EAED" FontSize="14"/>
+                                <TextBlock Text="Downloading... 65%" Foreground="#8AB4F8" FontSize="12"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <ProgressBar Value="65" Height="4" Margin="0,8,0,0" Foreground="#8AB4F8"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#35363A" CornerRadius="8" Padding="12" Margin="0,0,0,8">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🖼️" FontSize="24" Margin="0,0,12,0"/>
+                            <StackPanel>
+                                <TextBlock Text="photo.jpg" Foreground="#E8EAED" FontSize="14"/>
+                                <TextBlock Text="Completed - 1.2 MB" Foreground="#81C995" FontSize="12"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <ProgressBar Value="100" Height="4" Margin="0,8,0,0" Foreground="#81C995"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#35363A" CornerRadius="8" Padding="12" Margin="0,0,0,8">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🎬" FontSize="24" Margin="0,0,12,0"/>
+                            <StackPanel>
+                                <TextBlock Text="video.mp4" Foreground="#E8EAED" FontSize="14"/>
+                                <TextBlock Text="Downloading... 32%" Foreground="#8AB4F8" FontSize="12"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <ProgressBar Value="32" Height="4" Margin="0,8,0,0" Foreground="#8AB4F8"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

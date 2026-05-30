@@ -1,0 +1,326 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Colors - macOS Style Theme -->
+    <SolidColorBrush x:Key="ChromeOSPrimary" Color="#1A1A1A"/>
+    <SolidColorBrush x:Key="ChromeOSAccent" Color="#0A84FF"/>
+    <SolidColorBrush x:Key="ChromeOSAccentHover" Color="#409CFF"/>
+    <SolidColorBrush x:Key="ChromeOSBackground" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ChromeOSSurface" Color="#2C2C2E"/>
+    <SolidColorBrush x:Key="ChromeOSSurfaceLight" Color="#3A3A3C"/>
+    <SolidColorBrush x:Key="ChromeOSText" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ChromeOSTextSecondary" Color="#98989D"/>
+    <SolidColorBrush x:Key="ChromeOSBorder" Color="#48484A"/>
+    <SolidColorBrush x:Key="ChromeOSShelf" Color="#1A1A1A"/>
+    <SolidColorBrush x:Key="ChromeOSLauncherBackground" Color="#252527"/>
+    <SolidColorBrush x:Key="ChromeOSWindowBackground" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="ChromeOSButtonHover" Color="#3A3A3C"/>
+    <SolidColorBrush x:Key="ChromeOSButtonPressed" Color="#48484A"/>
+    
+    <!-- macOS Dock Colors -->
+    <LinearGradientBrush x:Key="MacOSShelfBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#2D2D30" Offset="0"/>
+        <GradientStop Color="#1E1E20" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="MacOSShelfBorder" Color="#3A3A3C"/>
+    <SolidColorBrush x:Key="MacOSIndicator" Color="#0A84FF"/>
+    
+    <!-- Google Theme Elements -->
+    <SolidColorBrush x:Key="GoogleBlue" Color="#4285F4"/>
+    <SolidColorBrush x:Key="GoogleRed" Color="#EA4335"/>
+    <SolidColorBrush x:Key="GoogleYellow" Color="#FBBC05"/>
+    <SolidColorBrush x:Key="GoogleGreen" Color="#34A853"/>
+
+    <!-- Fonts -->
+    <FontFamily x:Key="ChromeOSFont">Segoe UI, Roboto, Helvetica, Arial, sans-serif</FontFamily>
+
+    <!-- Button Style -->
+    <Style x:Key="ChromeOSButton" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource ChromeOSText}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Padding" Value="16,8"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="{StaticResource ChromeOSFont}"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="20"
+                            Padding="{TemplateBinding Padding}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource ChromeOSButtonHover}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{StaticResource ChromeOSButtonPressed}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- macOS Dock Icon Button Style -->
+    <Style x:Key="DockIconButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="56"/>
+        <Setter Property="Height" Value="56"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="12"
+                            Padding="6">
+                        <Grid>
+                            <ContentPresenter x:Name="IconContent" 
+                                            HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"
+                                            RenderTransformOrigin="0.5,0.5">
+                                <ContentPresenter.RenderTransform>
+                                    <ScaleTransform x:Name="IconScale" ScaleX="1" ScaleY="1"/>
+                                </ContentPresenter.RenderTransform>
+                            </ContentPresenter>
+                            <!-- Indicator dot for running apps -->
+                            <Ellipse x:Name="Indicator"
+                                    Width="6" Height="6"
+                                    Fill="{StaticResource MacOSIndicator}"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Bottom"
+                                    Margin="0,0,0,2"
+                                    Visibility="Collapsed"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#3A3A3C"/>
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="IconScale"
+                                                       Storyboard.TargetProperty="ScaleX"
+                                                       To="1.3"
+                                                       Duration="0:0:0.15"/>
+                                        <DoubleAnimation Storyboard.TargetName="IconScale"
+                                                       Storyboard.TargetProperty="ScaleY"
+                                                       To="1.3"
+                                                       Duration="0:0:0.15"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="IconScale"
+                                                       Storyboard.TargetProperty="ScaleX"
+                                                       To="1"
+                                                       Duration="0:0:0.15"/>
+                                        <DoubleAnimation Storyboard.TargetName="IconScale"
+                                                       Storyboard.TargetProperty="ScaleY"
+                                                       To="1"
+                                                       Duration="0:0:0.15"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Icon Button Style for system tray -->
+    <Style x:Key="IconButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="44"/>
+        <Setter Property="Height" Value="44"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="22">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource ChromeOSButtonHover}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Launcher App Icon Style -->
+    <Style x:Key="LauncherAppIcon" TargetType="Button">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Width" Value="80"/>
+        <Setter Property="Height" Value="100"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <StackPanel>
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="12"
+                                Width="60" Height="60">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <TextBlock Text="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}"
+                                   FontSize="12"
+                                   Foreground="{StaticResource ChromeOSText}"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,4,0,0"
+                                   TextTrimming="CharacterEllipsis"
+                                   MaxWidth="70"/>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource ChromeOSButtonHover}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- TextBox Style -->
+    <Style x:Key="ChromeOSTextBox" TargetType="TextBox">
+        <Setter Property="Background" Value="{StaticResource ChromeOSSurfaceLight}"/>
+        <Setter Property="Foreground" Value="{StaticResource ChromeOSText}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ChromeOSBorder}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="12,10"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="{StaticResource ChromeOSFont}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="24">
+                        <ScrollViewer x:Name="PART_ContentHost" 
+                                      Margin="{TemplateBinding Padding}"
+                                      VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Context Menu Style - Modern macOS style -->
+    <Style x:Key="ChromeOSContextMenu" TargetType="ContextMenu">
+        <Setter Property="Background" Value="#2C2C2E"/>
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <Setter Property="BorderBrush" Value="#48484A"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="4"/>
+        <Setter Property="FontFamily" Value="Segoe UI, Roboto, Helvetica, Arial, sans-serif"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContextMenu">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="12"
+                            Padding="{TemplateBinding Padding}">
+                        <Border.Effect>
+                            <DropShadowEffect Color="#000000" BlurRadius="24" ShadowDepth="4" Opacity="0.5"/>
+                        </Border.Effect>
+                        <ScrollViewer>
+                            <ItemsPresenter/>
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- MenuItem Style - Modern macOS style -->
+    <Style x:Key="ChromeOSMenuItem" TargetType="MenuItem">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <Setter Property="Padding" Value="16,10"/>
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="MenuItem">
+                    <Border x:Name="MenuItemBorder"
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="8"
+                            Padding="{TemplateBinding Padding}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <!-- Icon -->
+                            <ContentPresenter x:Name="Icon"
+                                            ContentSource="Icon"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Grid.Column="0"
+                                            Margin="0,0,12,0"
+                                            Width="16" Height="16"/>
+                            
+                            <!-- Header -->
+                            <ContentPresenter x:Name="HeaderHost"
+                                            ContentSource="Header"
+                                            RecognizesAccessKey="True"
+                                            Grid.Column="1"
+                                            VerticalAlignment="Center"/>
+                            
+                            <!-- Submenu indicator -->
+                            <Path x:Name="SubmenuIndicator"
+                                Data="M 0 0 L 6 4 L 0 8 Z"
+                                Fill="#98989D"
+                                Grid.Column="2"
+                                VerticalAlignment="Center"
+                                Margin="8,0,0,0"
+                                Visibility="Collapsed"/>
+                        </Grid>
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="MenuItemBorder" Property="Background" Value="#3A3A3C"/>
+                        </Trigger>
+                        
+                        <Trigger Property="IsHighlighted" Value="True">
+                            <Setter TargetName="MenuItemBorder" Property="Background" Value="#4285F4"/>
+                        </Trigger>
+                        
+                        <Trigger Property="Role" Value="SubmenuItem">
+                            <Setter TargetName="SubmenuIndicator" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Separator Style -->
+    <Style x:Key="ChromeOSMenuSeparator" TargetType="Separator">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Separator">
+                    <Border Background="#3A3A3C" Height="1" Margin="8,4"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
