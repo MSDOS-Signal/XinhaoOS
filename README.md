@@ -6,6 +6,10 @@
 
 这是一个基于 WPF (Windows Presentation Foundation) 开发的微型桌面操作系统，提供了完整的现代操作系统用户体验。项目采用 C# 和 XAML 技术栈，模拟了 Windows+Linux+MacOS+ChromeOS 的界面风格、应用程序生态系统和系统管理功能。
 
+![开机引导](https://cloudflareimg.cdn.sn/i/6a1bb5944b022_1780200852.webp)
+![登陆界面](https://cloudflareimg.cdn.sn/i/6a1bb59507292_1780200853.webp)
+![用户操作](https://cloudflareimg.cdn.sn/i/6a1bb59cd989d_1780200860.webp)
+
 ### 核心优势
 
 - ✅ **Windows 原生运行**: 无需虚拟机，直接在 Windows 上运行
